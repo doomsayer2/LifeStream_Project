@@ -1,0 +1,11 @@
+{
+    "repositories" : {
+        "pubnub" : {
+            "type":"git",
+            "url":"https://github.com/pubnub/php"
+        }
+    },
+    "require": {
+        "pubnub/pubnub": "3.5.0"
+    }
+}
