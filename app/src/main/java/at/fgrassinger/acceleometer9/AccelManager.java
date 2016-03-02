@@ -3,15 +3,21 @@ package at.fgrassinger.acceleometer9;
 import java.io.Serializable;
 
 /**
- * This is the Accelerometer manager for the Accelerometer program.
+ * This is the Accelerometer manager for the Accelerometer program. The class stores acceleration data
+ * as well as various other functions. For showing the data and visualize it.
  * Created by admin on 02.03.2015.
  */
 public class AccelManager implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private long time;              //How long the measurement is taking
     private double x;               //x-Axis
     private double y;               //y-Axis
     private double z;               //z-Axis
     private double magnitude;       //sqrt(x^2+y^2+z^2)
+
+    private long time2;
+    private double magnitude2;
 
     /**
      * Constructor for the AccelManager class in order to set the given parameters
@@ -22,6 +28,11 @@ public class AccelManager implements Serializable {
         this.y = y;
         this.z = z;
         this.magnitude = magnitude;
+    }
+
+    public AccelManager(long time2, double magnitude2) {
+        this.time2 = time2;
+        this.magnitude2 = magnitude2;
     }
 
     //Getter and Setter methods for time variable
@@ -62,6 +73,14 @@ public class AccelManager implements Serializable {
     }
     public void setMagnitude(double magnitude) {
         this.magnitude = magnitude;
+    }
+
+    public long getTime2() {
+        return time2;
+    }
+
+    public double getMagnitude2() {
+        return magnitude2;
     }
 
     /**

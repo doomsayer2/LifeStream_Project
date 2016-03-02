@@ -10,4 +10,5 @@
     <string name="result_tv">Reanimation Results</string>
     <string name="btn_Back">BACK</string>
     <string name="result_iv">resultImage</string>
+    <string name="iV_alt_Text">push</string>
 </resources>

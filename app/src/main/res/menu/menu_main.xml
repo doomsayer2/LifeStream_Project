@@ -2,12 +2,20 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item android:id="@+id/connect"
-        android:title="ENTER IP"
-        android:icon="@drawable/custom_menu"
-        app:showAsAction="ifRoom|withText"/>
+        android:title="Configure IP Address"
+        android:icon="@drawable/connect"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/calculate"
+        android:title="Configure Calculation"
+        android:icon="@drawable/calculation"
+        app:showAsAction="never"/>
 
     <item android:id="@+id/unlock"
-        android:title="UNLOCK BUTTONS"
-        android:icon="@drawable/custom_menu"/>
+        android:title="Unlock Buttons"
+        app:showAsAction="never"
+        android:icon="@drawable/unlock"/>
+
 </menu>
